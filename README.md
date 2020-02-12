@@ -15,9 +15,9 @@ In this project, I analyzed local and global temperature data and compare the te
 + Key consideration: I notice in global file, the data didn’t start until 1750, while in 	Memphis file the 	data started 1743, however, there are four year’s missing value 	between 1746 and 1749 in Memphis 	file. Science I picked seven years as window, 	this missing 	part will become an outliner, so it make 	sense to drop it off and 	start both data analysis from 1750.
 
 ### Software used
-+ Postgre SQL -- used for gathering initial understanding of raw data, querying then pulling data as needed and export then as csv file.
-+ WPS Office (Excel/ Word) --used for calculating moving average and editing file to 	export as pdf file.
-+ Tableau -- used for data visualization.
++ Postgre SQL
++ WPS Office (Excel/ Word)
++ Tableau
 
 ### Files used
 + city_data.csv
