@@ -1,0 +1,885 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0119.2058                               -->
+<workbook source-build='2019.4.2 (20194.20.0119.2058)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='global' inline='true' name='federated.17cv9bl1tgyhu014jxc241o4hnai' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='global' name='textscan.150rdpr1bkap0l15xc2sc0un03ud'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:/Users/victo/Desktop/global.csv' dataRefreshTime='' directory='C:/Users/victo/Desktop' filename='C:/Users/victo/AppData/Local/Temp/TableauTemp/1mr3rsy1qp5e8f156oxao0rop3x0/global.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.150rdpr1bkap0l15xc2sc0un03ud' name='global.csv' table='[C:\Users\victo\Desktop\global#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:C267:no:A1:C267:1' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='real' name='avg_temp' ordinal='1' />
+            <column datatype='real' name='7 years MAs(global)' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[global.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C267:no:A1:C267:1&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[global.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_temp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_temp]</local-name>
+            <parent-name>[global.csv]</parent-name>
+            <remote-alias>avg_temp</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>7 years MAs(global)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[7 years MAs(global)]</local-name>
+            <parent-name>[global.csv]</parent-name>
+            <remote-alias>7 years MAs(global)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Global' datatype='real' name='[7 years MAs(global)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Avg Temp' datatype='real' name='[avg_temp]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.464387' measure-ordering='alphabetic' measure-percentage='0.535613' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;美国&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;实际&quot;</bucket>
+            <bucket>&quot;估计&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+    </datasource>
+    <datasource caption='menphis+' inline='true' name='federated.1vkizxm0a20vgk1gfaqx90dggifw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='menphis' name='textscan.1legdgq05e4lr516edw8o02afc96'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:/Users/victo/Desktop/menphis.csv' dataRefreshTime='' directory='C:/Users/victo/Desktop' filename='C:/Users/victo/AppData/Local/Temp/TableauTemp/1814jfz02bbe0b178nsjo013b5vz/menphis.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1legdgq05e4lr516edw8o02afc96' name='menphis.csv' table='[menphis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='city' ordinal='1' />
+            <column datatype='string' name='country' ordinal='2' />
+            <column datatype='real' name='avg_temp' ordinal='3' />
+            <column datatype='real' name='7 years MAs(Menphis)' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[menphis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[menphis.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[menphis.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[menphis.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_temp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_temp]</local-name>
+            <parent-name>[menphis.csv]</parent-name>
+            <remote-alias>avg_temp</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>7 years MAs(Menphis)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[7 years MAs(Menphis)]</local-name>
+            <parent-name>[menphis.csv]</parent-name>
+            <remote-alias>7 years MAs(Menphis)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Memphis' datatype='real' name='[7 years MAs(Menphis)]' role='measure' type='quantitative' />
+      <column caption='7 years MAs(Menphis)' datatype='real' name='[7 years MAs]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Avg Temp' datatype='real' name='[avg_temp]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column aggregation='None' caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[7 years MAs(Menphis)]' derivation='Attribute' name='[attr:7 years MAs(Menphis):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[7 years MAs]' derivation='Attribute' name='[attr:7 years MAs:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[7 years MAs]' derivation='None' name='[none:7 years MAs:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[7 years MAs(Menphis)]' derivation='Sum' name='[sum:7 years MAs(Menphis):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[7 years MAs]' derivation='Sum' name='[sum:7 years MAs:qk]' pivot='key' type='quantitative' />
+      <drill-paths>
+        <drill-path name='country, city'>
+          <field>[country]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' dim-percentage='0.48433' measure-ordering='alphabetic' measure-percentage='0.51567' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[attr:7 years MAs:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:7 years MAs:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.17cv9bl1tgyhu014jxc241o4hnai].[sum:7 years MAs(global):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[attr:7 years MAs(Menphis):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.17cv9bl1tgyhu014jxc241o4hnai].[attr:7 years MAs(global):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;美国&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;实际&quot;</bucket>
+            <bucket>&quot;估计&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <datasource-dependencies datasource='federated.17cv9bl1tgyhu014jxc241o4hnai'>
+        <column caption='Global' datatype='real' name='[7 years MAs(global)]' role='measure' type='quantitative' />
+        <column-instance column='[7 years MAs(global)]' derivation='Sum' name='[sum:7 years MAs(global):qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Global vs. Memphis Weather Trends(7 Years Moving Average 1750~2013)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='menphis+' name='federated.1vkizxm0a20vgk1gfaqx90dggifw' />
+            <datasource caption='global' name='federated.17cv9bl1tgyhu014jxc241o4hnai' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17cv9bl1tgyhu014jxc241o4hnai'>
+            <column caption='Global' datatype='real' name='[7 years MAs(global)]' role='measure' type='quantitative' />
+            <column-instance column='[7 years MAs(global)]' derivation='Sum' name='[sum:7 years MAs(global):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1vkizxm0a20vgk1gfaqx90dggifw'>
+            <column caption='Memphis' datatype='real' name='[7 years MAs(Menphis)]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[7 years MAs(Menphis)]' derivation='Sum' name='[sum:7 years MAs(Menphis):qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vkizxm0a20vgk1gfaqx90dggifw].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.17cv9bl1tgyhu014jxc241o4hnai].[sum:7 years MAs(global):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]' included-values='in-range'>
+            <min>1756</min>
+            <max>2013</max>
+          </filter>
+          <slices>
+            <column>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[:Measure Names]</column>
+            <column>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]' scope='rows' value='Temperature(`C)' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]' field-type='quantitative' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]' value='bold' />
+            <format attr='font-weight' field='[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1vkizxm0a20vgk1gfaqx90dggifw].[:Measure Names]' value='Categories'>
+              <formatted-text>
+                <run>Categories</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1vkizxm0a20vgk1gfaqx90dggifw].[:Measure Names]' />
+              <lod column='[federated.17cv9bl1tgyhu014jxc241o4hnai].[sum:7 years MAs(global):qk]' />
+              <tooltip column='[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-scope' value='multi-mark' />
+                <format attr='mark-labels-range-field' value='[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]</rows>
+        <cols>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]</cols>
+        <annotations>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Year: </run>
+              <run bold='true'>&lt;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>global: </run>
+              <run bold='true'>&lt;[federated.17cv9bl1tgyhu014jxc241o4hnai].[sum:7 years MAs(global):qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Menphis: </run>
+              <run bold='true'>&lt;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]</field>
+                      <field>[federated.17cv9bl1tgyhu014jxc241o4hnai].[sum:7 years MAs(global):qk]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[:Measure Names]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>1816</value>
+                    <value>15.039999999999999</value>
+                    <value>7.1900000000000004</value>
+                    <value>&quot;[federated.17cv9bl1tgyhu014jxc241o4hnai].[sum:7 years MAs(global):qk]&quot;</value>
+                    <value>7.1900000000000004</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='54' y='-148' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Year: </run>
+              <run bold='true'>&lt;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>global: </run>
+              <run bold='true'>&lt;[federated.17cv9bl1tgyhu014jxc241o4hnai].[sum:7 years MAs(global):qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Menphis: </run>
+              <run bold='true'>&lt;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]</field>
+                      <field>[federated.17cv9bl1tgyhu014jxc241o4hnai].[sum:7 years MAs(global):qk]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[:Measure Names]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>2011</value>
+                    <value>17.010000000000002</value>
+                    <value>9.5899999999999999</value>
+                    <value>&quot;[federated.17cv9bl1tgyhu014jxc241o4hnai].[sum:7 years MAs(global):qk]&quot;</value>
+                    <value>9.5899999999999999</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-43' y='-96' />
+          </annotation>
+          <annotation class='point' id='8' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Year: </run>
+              <run bold='true'>&lt;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>global: </run>
+              <run bold='true'>N/A</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Menphis: </run>
+              <run bold='true'>&lt;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]</field>
+                      <field>[federated.17cv9bl1tgyhu014jxc241o4hnai].[sum:7 years MAs(global):qk]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[:Measure Names]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>1749</value>
+                    <value>12.119999999999999</value>
+                    <value>%null%</value>
+                    <value>&quot;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]&quot;</value>
+                    <value>12.119999999999999</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='9' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Year: </run>
+              <run bold='true'>&lt;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>global: </run>
+              <run bold='true'>&lt;[federated.17cv9bl1tgyhu014jxc241o4hnai].[sum:7 years MAs(global):qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Menphis: </run>
+              <run bold='true'>&lt;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]</field>
+                      <field>[federated.17cv9bl1tgyhu014jxc241o4hnai].[sum:7 years MAs(global):qk]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[:Measure Names]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>2013</value>
+                    <value>17.210000000000001</value>
+                    <value>9.5700000000000003</value>
+                    <value>&quot;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]&quot;</value>
+                    <value>17.210000000000001</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-80' y='153' />
+          </annotation>
+          <annotation class='point' id='10' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Year: </run>
+              <run bold='true'>&lt;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Global: </run>
+              <run bold='true'>&lt;[federated.17cv9bl1tgyhu014jxc241o4hnai].[sum:7 years MAs(global):qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Memphis: </run>
+              <run bold='true'>&lt;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[none:year:qk]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]</field>
+                      <field>[federated.17cv9bl1tgyhu014jxc241o4hnai].[sum:7 years MAs(global):qk]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[:Measure Names]</field>
+                      <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>1784</value>
+                    <value>14.06</value>
+                    <value>8.3599999999999994</value>
+                    <value>&quot;[federated.1vkizxm0a20vgk1gfaqx90dggifw].[sum:7 years MAs(Menphis):qk]&quot;</value>
+                    <value>14.06</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+        </annotations>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='false' fill-type='fill-missing' ignore-last='0' model-type='custom' range-type='auto' season-type='ets-none' show-prediction-bands='true' trend-type='ets-none' />
+      </table>
+      <simple-id uuid='{DFF9E891-8358-4B2B-AB51-223FDCABEABB}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='11' param='[federated.1vkizxm0a20vgk1gfaqx90dggifw].[:Measure Names]' type='color' />
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='false' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vkizxm0a20vgk1gfaqx90dggifw].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{E57EA226-A64F-4836-8E1F-795727B60738}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='工作表 1' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
